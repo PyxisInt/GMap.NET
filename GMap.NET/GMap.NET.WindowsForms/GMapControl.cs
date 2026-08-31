@@ -112,6 +112,7 @@ namespace GMap.NET.WindowsForms
         /// </summary>
         [Category("GMap.NET")]
         [Description("maximum zoom level of map")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int MaxZoom
         {
             get
@@ -129,6 +130,7 @@ namespace GMap.NET.WindowsForms
         /// </summary>
         [Category("GMap.NET")]
         [Description("minimum zoom level of map")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int MinZoom
         {
             get
@@ -146,6 +148,7 @@ namespace GMap.NET.WindowsForms
         /// </summary>
         [Category("GMap.NET")]
         [Description("map zooming type for mouse wheel")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public MouseWheelZoomType MouseWheelZoomType
         {
             get
@@ -202,6 +205,7 @@ namespace GMap.NET.WindowsForms
         /// </summary>
         [Category("GMap.NET")]
         [Description("enable map zoom on mouse wheel")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool MouseWheelZoomEnabled
         {
             get
@@ -247,6 +251,7 @@ namespace GMap.NET.WindowsForms
         /// </summary>
         [Category("GMap.NET")]
         [Description("background color od the selected area")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Color SelectedAreaFillColor
         {
             get
@@ -276,6 +281,7 @@ namespace GMap.NET.WindowsForms
         ///     draw lines at the mouse pointer position
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public HelperLineOptions HelperLineOption
         {
             get
@@ -332,6 +338,7 @@ namespace GMap.NET.WindowsForms
         /// </summary>
         [Category("GMap.NET")]
         [Description("background color of the empty tile")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public Color EmptyTileColor
         {
             get
@@ -379,6 +386,7 @@ namespace GMap.NET.WindowsForms
         ///     retry count to get tile
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int RetryLoadTile
         {
             get
@@ -395,6 +403,7 @@ namespace GMap.NET.WindowsForms
         ///     how many levels of tiles are staying decompresed in memory
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int LevelsKeepInMemory
         {
             get
@@ -420,6 +429,7 @@ namespace GMap.NET.WindowsForms
         /// </summary>
         [Category("GMap.NET")]
         [Description("shows tile gridlines")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool ShowTileGridLines
         {
             get
@@ -439,6 +449,7 @@ namespace GMap.NET.WindowsForms
         private RectLatLng _selectedArea;
 
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public RectLatLng SelectedArea
         {
             get
@@ -505,6 +516,7 @@ namespace GMap.NET.WindowsForms
         private bool _grayScale;
 
         [Category("GMap.NET")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool GrayScaleMode
         {
             get
@@ -521,6 +533,7 @@ namespace GMap.NET.WindowsForms
         private bool _negative;
 
         [Category("GMap.NET")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool NegativeMode
         {
             get
@@ -1753,6 +1766,7 @@ namespace GMap.NET.WindowsForms
         ///     bearing for rotation of the map
         /// </summary>
         [Category("GMap.NET")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public float Bearing
         {
             get
@@ -2727,6 +2741,7 @@ namespace GMap.NET.WindowsForms
 
         [Category("GMap.NET")]
         [Description("map scale type")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public ScaleModes ScaleMode { get; set; } = ScaleModes.Integer;
 
         [Category("GMap.NET")]
@@ -3086,6 +3101,7 @@ namespace GMap.NET.WindowsForms
         ///     is routes enabled
         /// </summary>
         [Category("GMap.NET")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool RoutesEnabled
         {
             get
@@ -3102,6 +3118,7 @@ namespace GMap.NET.WindowsForms
         ///     is polygons enabled
         /// </summary>
         [Category("GMap.NET")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool PolygonsEnabled
         {
             get
@@ -3118,6 +3135,7 @@ namespace GMap.NET.WindowsForms
         ///     is markers enabled
         /// </summary>
         [Category("GMap.NET")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool MarkersEnabled
         {
             get
@@ -3134,6 +3152,7 @@ namespace GMap.NET.WindowsForms
         ///     can user drag map
         /// </summary>
         [Category("GMap.NET")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool CanDragMap
         {
             get
@@ -3150,6 +3169,7 @@ namespace GMap.NET.WindowsForms
         ///     map render mode
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public RenderMode RenderMode
         {
             get
