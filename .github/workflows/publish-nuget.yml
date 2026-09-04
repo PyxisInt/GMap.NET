@@ -8,6 +8,8 @@ on:
 jobs:
   publish:
     runs-on: windows-latest
+    permissions:
+      id-token: write  # enable GitHub OIDC token issuance for Trusted Publishing
 
     steps:
       - name: Checkout
@@ -44,9 +46,15 @@ jobs:
           --configuration Release --no-build --output ./nupkg
           /p:PackageVersion=${{ steps.version.outputs.version }}
 
+      - name: NuGet login (OIDC -> short-lived API key)
+        id: login
+        uses: NuGet/login@v1
+        with:
+          user: ${{ secrets.NUGET_USER }} # nuget.org profile username, not email
+
       - name: Push to NuGet.org
         run: >
           dotnet nuget push "./nupkg/*.nupkg"
-          --api-key ${{ secrets.NUGET_API_KEY }}
+          --api-key ${{ steps.login.outputs.NUGET_API_KEY }}
           --source https://api.nuget.org/v3/index.json
           --skip-duplicate
