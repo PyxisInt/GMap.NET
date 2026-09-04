@@ -31,20 +31,17 @@ jobs:
       - name: Restore
         run: dotnet restore GMap.NET.sln
 
-      - name: Build
-        run: dotnet build GMap.NET.sln --configuration Release --no-restore
-
       - name: Pack GMap.NET.Core
         run: >
           dotnet pack GMap.NET/GMap.NET.Core/GMap.NET.Core.csproj
-          --configuration Release --no-build --output ./nupkg
-          /p:PackageVersion=${{ steps.version.outputs.version }}
+          --configuration Release --output ./nupkg
+          -p:PackageVersion=${{ steps.version.outputs.version }}
 
       - name: Pack GMap.NET.WindowsForms
         run: >
           dotnet pack GMap.NET/GMap.NET.WindowsForms/GMap.NET.WindowsForms.csproj
-          --configuration Release --no-build --output ./nupkg
-          /p:PackageVersion=${{ steps.version.outputs.version }}
+          --configuration Release --output ./nupkg
+          -p:PackageVersion=${{ steps.version.outputs.version }}
 
       - name: NuGet login (OIDC -> short-lived API key)
         id: login
