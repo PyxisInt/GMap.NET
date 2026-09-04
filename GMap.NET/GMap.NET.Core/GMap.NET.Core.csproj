@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>GMap.NET.Core</PackageId>
+    <PackageId>PyxisInt.GMap.NET.Core</PackageId>
     <Product>GMap.NET.Core</Product>
     <AssemblyTitle>GMap.NET.Core</AssemblyTitle>
     <RootNamespace>GMap.NET</RootNamespace>

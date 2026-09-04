@@ -6,28 +6,31 @@ GMap.NET Windows Forms, Presentation & Avalonia is an excellent open source, pow
 Allows the use of routing, geocoding, directions and maps from Google, Yahoo!, Bing, OpenStreetMap, ArcGIS, Pergo, SigPac, Yendux, Mapy.cz, Maps.lt, iKarte.lv, NearMap, HereMap, CloudMade, WikiMapia, MapQuest and many more.
 
 # Installing
-GMap.NET is available as a Nuget package from:
+
+This fork targets .NET 10 and publishes `GMap.NET.Core` and `GMap.NET.WindowsForms` under its own package IDs
+(distinct from the upstream `GMap.NET.Core` / `GMap.NET.WinForms` packages, which this fork's account does not own):
+
+https://www.nuget.org/packages/PyxisInt.GMap.NET.Core
+
+https://www.nuget.org/packages/PyxisInt.GMap.NET.WinForms
+
+Are installable using the following command in the Package Manager Console:
+
+```
+PM> Install-Package PyxisInt.GMap.NET.Core
+```
+```
+PM> Install-Package PyxisInt.GMap.NET.WinForms
+```
+
+The original upstream packages (WinForms.Utils, WinPresentation, WinAvalonia included) remain available from the
+original project:
 
 https://www.nuget.org/packages/GMap.NET.Core
 
 https://www.nuget.org/packages/GMap.NET.WinForms
 
 https://www.nuget.org/packages/GMap.NET.WinForms.Utils
-
-https://www.nuget.org/packages/GMap.NET.WinPresentation 
-
-https://www.nuget.org/packages/GMap.NET.WinAvalonia 
-
-Are installable using the following command in the Package Manager Console:
-
-```
-PM> Install-Package GMap.NET.Core
-```
-```
-PM> Install-Package GMap.NET.WinForms
-```
-```
-PM> Install-Package GMap.NET.WinForms.Utils
 ```
 ```
 PM> Install-Package GMap.NET.WinPresentation

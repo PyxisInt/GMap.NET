@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>GMap.NET.WinForms</PackageId>
+    <PackageId>PyxisInt.GMap.NET.WinForms</PackageId>
     <Product>GMap.NET.WindowsForms</Product>
     <AssemblyTitle>GMap.NET.WindowsForms</AssemblyTitle>
     
