@@ -29,9 +29,6 @@ jobs:
           $version = $tag -replace '^v', ''
           "version=$version" >> $env:GITHUB_OUTPUT
 
-      - name: Restore
-        run: dotnet restore GMap.NET.sln
-
       - name: Pack GMap.NET.Core
         run: >
           dotnet pack GMap.NET/GMap.NET.Core/GMap.NET.Core.csproj
