@@ -8,6 +8,7 @@ on:
 jobs:
   publish:
     runs-on: windows-latest
+    environment: Production  # must match the Environment set on the nuget.org Trusted Publishing policy
     permissions:
       id-token: write  # enable GitHub OIDC token issuance for Trusted Publishing
 
